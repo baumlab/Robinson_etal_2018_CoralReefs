@@ -1,4 +1,4 @@
-# Robinson-etal-2018-CoralReefs
+# pacific-reefs-benthos
 R code accompanying Robinson et al. Environmental
 conditions and herbivore biomass determine coral reef benthic community
 composition: implications for quantitative baselines.
