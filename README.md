@@ -8,7 +8,7 @@ Jana M. McPherson, Jeanette Clark, Thomas A. Oliver,
 Julia K. Baum
 
 
-In revision at Coral Reefs, August 2018.
+Accepted in Coral Reefs, August 2018.
 
 *data/*
 
