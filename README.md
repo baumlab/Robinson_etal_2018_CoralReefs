@@ -48,8 +48,8 @@ In the **[results](results/)** folder, Rdata files contain optimum BRTs for each
 In the **[data/](data/)** folder,  [CREP_predictor_df.csv](data/CREP_predictor_df.csv) contains all response and explanatory covariates analyzed. Autocovariate csvs contain all estimate autocovariates fitted in BRTs. Predictor dataframe column names are:
 
 * ```site.id``` = site name by island (letters) and site (numbers)
-* ```lat = latitude```
-* ```lon = longitude```
+* ```lat``` = latitude
+* ```lon``` = longitude
 * ```source``` = dataset
 * ```unique```.site = unique survey in space and time
 * ```ISLAND``` = island 
