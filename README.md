@@ -29,6 +29,8 @@ install.packages(c("brt", "gbm", "spdep"))
 
 **[scripts/BRT_optimize_decoupled.R](scripts/BRT_optimize_decoupled.R)** fits and optimizes BRTs for uninhabited and inhabited island datasets (decoupling analysis)
 
+*Be aware that BRT optimization functions are essentially loops of boosted models. These can be computationally intensive and will eat your computer if you aren't careful. Please refer to [Elith and Leathwick (2017)](https://cran.r-project.org/web/packages/dismo/vignettes/brt.pdf) for details on BRT approaches used here.*
+
 ****
 
 In the **[results](results/)** folder, Rdata files contain optimum BRTs for each analysis. File names indicate the response variable and fitted dataset:
