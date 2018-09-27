@@ -1,3 +1,7 @@
+
+
+****
+
 R code accompanying **Robinson et al. Environmental
 conditions and herbivore biomass determine coral reef benthic community
 composition: implications for quantitative baselines.**
@@ -6,25 +10,59 @@ Authors: James P.W. Robinson, Ivor D. Williams, Lauren A. Yeager,
 Jana M. McPherson, Jeanette Clark, Thomas A. Oliver,
 Julia K. Baum
 
-
 Accepted in Coral Reefs, August 2018.
 
-*data/*
+****
 
-CREP_predictor_df.csv = response and predictor covariates for all results
+The following R packages were used to analyse data:
 
-*scripts/*
+```
+install.packages(c("brt", "gbm", "spdep"))
+```
 
-autocovariates.R = estimation of autocovariates to reduce spatial autocorrelation
+**[data/CREP_predictor_df.csv](data/CREP_predictor_df.csv )** are the response and predictor covariates for all results
 
-BRT_optimize.R = fit and optimise BRTs for full dataset
+**[scripts/autocovariates.R](scripts/autocovariates.R)** estimates autocovariates to reduce spatial autocorrelation
 
-BRT_optimize_decoupled.R = fit and optimize BRTs for uninhabited and inhabited island datasets
+**[scripts/BRT_optimize.R](scripts/BRT_optimize.R)** fits and optimises BRTs for the full dataset
 
-*results/*
+**[scripts/BRT_optimize_decoupled.R](scripts/BRT_optimize_decoupled.R)** fits and optimizes BRTs for uninhabited and inhabited island datasets (decoupling analysis)
 
-Rdata files holding optimum BRTs for each analysis. File names indicate fitted dataframes:
+In the **[results](results/)** folder, Rdata files contain optimum BRTs for each analysis. File names indicate the response variable and fitted dataset:
 
-Response variable: log10ratiopq = reef-builder index; reefbuilderpq = calcifier cover; fleshypq = fleshy algal cover
+* Response variable
+  * log10ratiopq = reef-builder index
+  * reefbuilderpq = calcifier cover
+  * fleshypq = fleshy algal cover
+* Dataset
+  * pop = inhabited islands
+  * nopop = uninhabited islands
 
-Dataset: pop = inhabited islands; nopop = uninhabited islands
+In the **[data/](data/)** folder,  [CREP_predictor_df.csv](data/CREP_predictor_df.csv) contains all response and explanatory covariates analyzed. Autocovariate csvs contain all estimate autocovariates fitted in BRTs. Predictor dataframe column names are:
+
+site.id = site name by island (letters) and site (numbers)
+lat = latitude
+lon = longitude
+source = dataset
+unique.site = unique survey in space and time
+ISLAND = island 
+STATE = uninhabited or inhabited island
+COUNTRY = island archipelago
+min_SST = minimum SST (celsius)
+prod = net primary productivity (mg C m-2 day-1)
+complexity = structural complexity
+IslType = island type (atoll, low or high island)
+wave = wave energy (KWhr m-1)
+arag = aragonite saturation state
+depth = site depth (metres)
+cropper = cropper biomass (kg/ha)
+browser = browser biomass (kg/ha)
+scraper.excavator = scraper and excavator biomass (kg/ha)
+total_herb = total herbivore biomass (kg/ha)
+ratiopq = untransformed reef-builder index
+fleshypq = fleshy algal cover (proportion of 1)
+reefbuilderpq = reef-builder cover (proportion of 1)
+log10ratiopq = log10 reef-builder index (main response variable)
+
+
+
