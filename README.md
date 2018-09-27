@@ -19,6 +19,7 @@ The following R packages were used to analyse data:
 ```
 install.packages(c("brt", "gbm", "spdep"))
 ```
+****
 
 **[data/CREP_predictor_df.csv](data/CREP_predictor_df.csv )** are the response and predictor covariates for all results
 
@@ -27,6 +28,8 @@ install.packages(c("brt", "gbm", "spdep"))
 **[scripts/BRT_optimize.R](scripts/BRT_optimize.R)** fits and optimises BRTs for the full dataset
 
 **[scripts/BRT_optimize_decoupled.R](scripts/BRT_optimize_decoupled.R)** fits and optimizes BRTs for uninhabited and inhabited island datasets (decoupling analysis)
+
+****
 
 In the **[results](results/)** folder, Rdata files contain optimum BRTs for each analysis. File names indicate the response variable and fitted dataset:
 
@@ -37,32 +40,34 @@ In the **[results](results/)** folder, Rdata files contain optimum BRTs for each
 * Dataset
   * pop = inhabited islands
   * nopop = uninhabited islands
+  
+****
 
 In the **[data/](data/)** folder,  [CREP_predictor_df.csv](data/CREP_predictor_df.csv) contains all response and explanatory covariates analyzed. Autocovariate csvs contain all estimate autocovariates fitted in BRTs. Predictor dataframe column names are:
 
-site.id = site name by island (letters) and site (numbers)
-lat = latitude
-lon = longitude
-source = dataset
-unique.site = unique survey in space and time
-ISLAND = island 
-STATE = uninhabited or inhabited island
-COUNTRY = island archipelago
-min_SST = minimum SST (celsius)
-prod = net primary productivity (mg C m-2 day-1)
-complexity = structural complexity
-IslType = island type (atoll, low or high island)
-wave = wave energy (KWhr m-1)
-arag = aragonite saturation state
-depth = site depth (metres)
-cropper = cropper biomass (kg/ha)
-browser = browser biomass (kg/ha)
-scraper.excavator = scraper and excavator biomass (kg/ha)
-total_herb = total herbivore biomass (kg/ha)
-ratiopq = untransformed reef-builder index
-fleshypq = fleshy algal cover (proportion of 1)
-reefbuilderpq = reef-builder cover (proportion of 1)
-log10ratiopq = log10 reef-builder index (main response variable)
+* site.id = site name by island (letters) and site (numbers)
+* lat = latitude
+* lon = longitude
+* source = dataset
+* unique.site = unique survey in space and time
+* ISLAND = island 
+* STATE = uninhabited or inhabited island
+* COUNTRY = island archipelago
+* min_SST = minimum SST (celsius)
+* prod = net primary productivity (mg C m-2 day-1)
+* complexity = structural complexity
+* IslType = island type (atoll, low or high island)
+* wave = wave energy (KWhr m-1)
+* arag = aragonite saturation state
+* depth = site depth (metres)
+* cropper = cropper biomass (kg/ha)
+* browser = browser biomass (kg/ha)
+* scraper.excavator = scraper and excavator biomass (kg/ha)
+* total_herb = total herbivore biomass (kg/ha)
+* ratiopq = untransformed reef-builder index
+* fleshypq = fleshy algal cover (proportion of 1)
+* reefbuilderpq = reef-builder cover (proportion of 1)
+* log10ratiopq = log10 reef-builder index (main response variable)
 
 
 
