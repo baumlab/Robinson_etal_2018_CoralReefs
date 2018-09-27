@@ -1,7 +1,6 @@
-# pacific-reefs-benthos
-R code accompanying Robinson et al. Environmental
+R code accompanying **Robinson et al. Environmental
 conditions and herbivore biomass determine coral reef benthic community
-composition: implications for quantitative baselines.
+composition: implications for quantitative baselines.**
 
 Authors: James P.W. Robinson, Ivor D. Williams, Lauren A. Yeager,
 Jana M. McPherson, Jeanette Clark, Thomas A. Oliver,
