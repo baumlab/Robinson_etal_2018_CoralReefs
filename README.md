@@ -10,7 +10,7 @@ Authors: James P.W. Robinson, Ivor D. Williams, Lauren A. Yeager,
 Jana M. McPherson, Jeanette Clark, Thomas A. Oliver,
 Julia K. Baum
 
-Accepted in Coral Reefs, September 2018.
+Coral Reefs, 2018. We are open access at [https://link.springer.com/article/10.1007/s00338-018-01737-w](https://link.springer.com/article/10.1007/s00338-018-01737-w)!
 
 ****
 
